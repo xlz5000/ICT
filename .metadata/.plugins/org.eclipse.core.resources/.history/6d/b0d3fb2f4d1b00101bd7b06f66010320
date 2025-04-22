@@ -1,0 +1,33 @@
+package com.ict.edu08.service;
+
+import java.util.List;
+
+import javax.servlet.http.HttpSession;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.ict.edu08.vo.CartVO;
+import com.ict.edu08.vo.ShopVO;
+
+
+public interface ShopService {
+
+	
+
+	
+	
+	public List<ShopVO> getShopList(String category);
+	public ShopVO getShopDetail(String shop_idx);
+	
+	
+	public List<CartVO> getCartList(String m_id);
+	
+	
+	public int getCartChk(String m_id, String p_num);
+	public void getCartInsert(CartVO cvo);
+	
+	public void getCartUpdate();
+}

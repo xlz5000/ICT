@@ -1,0 +1,24 @@
+package com.ict.edu09.service;
+
+import org.springframework.stereotype.Service;
+
+import com.ict.edu09.vo.MembersVO;
+
+
+@Service
+public class MembersServiceImpl implements MembersService{
+
+	@Override
+	public MembersVO getMembersLogInOk(String m_id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getMembersJoinOk(MembersVO mvo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+}

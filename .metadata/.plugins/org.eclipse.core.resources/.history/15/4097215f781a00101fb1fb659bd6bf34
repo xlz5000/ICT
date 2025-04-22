@@ -1,0 +1,10 @@
+package com.ict.edu09.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MembersController {
+	
+	
+
+}

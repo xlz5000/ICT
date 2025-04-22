@@ -1,0 +1,38 @@
+package com.ict.edu08.repository;
+
+import java.util.List;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.ict.edu08.vo.ShopVO;
+
+@Repository
+public class ShopDAO {
+
+	
+	@Autowired
+	private SqlSessionTemplate sqlSessionTemplate;
+	
+	public List<ShopVO> getShopList(String category) {
+		try {
+			return sqlSessionTemplate.selectList("shop.list", category);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	
+	public ShopVO getShopDetail(String shop_idx) {
+		try {
+			return sqlSessionTemplate.selectOne("shop.detail", shop_idx);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+}

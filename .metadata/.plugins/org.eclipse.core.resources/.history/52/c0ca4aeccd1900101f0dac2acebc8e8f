@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="bbs">
+	<form method="post" encType="multipart/form-data">
+		<table summary="게시판 글쓰기">
+			<caption>게시판 글쓰기</caption>
+			<tbody>
+			
+				<tr>
+					<th>작성자</th>
+					<td><input type="text" name="writer" size="45" value="${bovo.writer}"></td>
+				
+				</tr>
+				<tr>
+					<th>제목</th>
+					<td><input type="text" name="title" size="15" value="${bovo.title}"></td>
+				
+				
+				</tr>
+				
+			
+			
+			
+			
+			
+			</tbody>
+		</table>
+	
+	</form>
+	
+	
+	
+	</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+package com.ict.edu08.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class ShopServiceImpl implements ShopService{
+
+	
+	@Autowired
+	private ShopDAO shopDAo;
+}

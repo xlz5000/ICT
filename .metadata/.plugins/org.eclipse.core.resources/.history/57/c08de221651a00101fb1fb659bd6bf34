@@ -1,0 +1,15 @@
+package com.ict.edu08.vo;
+
+import org.springframework.web.multipart.MultipartFile;
+
+public class shopVO {
+	
+	
+	private String shop_idx, category, p_num, p_name, p_company,
+				p_images_s, p_image_l, p_content, p_date;
+	
+	//계산을 위해서 int
+	private int p_price, p_saleprice;
+	private MultipartFile file_s, file_l;
+
+}

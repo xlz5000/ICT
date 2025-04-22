@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h2>일반 로그인</h2>
+	<div id="login" style="margin: 30px;">
+		<form action="/members_login_ok" method="post">
+			<fieldset>
+				<legend>회원가입</legend>
+				<p><label for="m_id">ID : <input type="text" id="m_id" name="m_id" required></label>
+				<p><label for="m_pw">ID : <input type="password" id="m_pw" name="m_pw" required></label>
+			
+			
+			
+			</fieldset>
+		
+		
+		
+		</form>
+	</div>
+
+</body>
+</html>

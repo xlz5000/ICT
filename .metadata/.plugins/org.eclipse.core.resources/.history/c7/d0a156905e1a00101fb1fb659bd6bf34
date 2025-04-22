@@ -1,0 +1,13 @@
+package com.ict.common;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class CommonScheduler {
+	
+	// Spring MVC에서 말하는 스케줄은 주기적으로 특정 작업을 실행하기 위해 사용하는 기능
+	// 1. 스케줄을 실행하는 클래스 생성((ex) CommonScheduler)
+	// 2. 환경으 설정하는 클래스 생성((예)SchedulerConfig)
+	
+
+}

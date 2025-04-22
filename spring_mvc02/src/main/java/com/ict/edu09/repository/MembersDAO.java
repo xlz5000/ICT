@@ -1,0 +1,45 @@
+package com.ict.edu09.repository;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.ict.edu09.vo.MembersVO;
+
+
+
+@Repository
+public class MembersDAO {
+	
+
+	
+	@Autowired
+	private SqlSessionTemplate sqlSessionTemplate;
+	
+	
+	
+	public MembersVO getMembersLogInOk(String m_id) {
+		
+		try {
+			return sqlSessionTemplate.selectOne("members.loginchk", m_id);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	public int getMembersJoinOk(MembersVO mvo) {
+		try {
+			return sqlSessionTemplate.insert("members.join", mvo);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			return 0;
+		}
+	}
+
+	
+	
+	
+}

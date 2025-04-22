@@ -1,0 +1,30 @@
+package com.ict.edu09.repository;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.ict.edu09.vo.MembersVO;
+
+
+
+@Repository
+public class MembersDAO {
+	
+
+	
+	@Autowired
+	private SqlSessionTemplate sqlSessionTemplate;
+	
+	
+	
+	public MembersVO getMembersLogInOk(String m_id) {
+		return sqlSessionTemplate.selectOne();
+	}
+
+	public int getMembersJoinOk(MembersVO mvo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

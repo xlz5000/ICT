@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="members">
+
+	<select id="loginchk" parameterType="String" resultType="com.ict.edu09.vo.MembersVO">
+		select * from members where m_id=#{m_id}
+	
+	
+	
+	</select>
+	
+	
+	<insert id="join" parameterType="com.ict.edu09.vo.MembersVo"></insert>
+
+
+
+</mapper>

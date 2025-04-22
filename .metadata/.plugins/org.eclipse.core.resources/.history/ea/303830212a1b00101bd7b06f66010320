@@ -1,0 +1,38 @@
+package com.ict.edu09.controller;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.ict.edu09.service.MembersService;
+import com.ict.edu09.vo.MembersVO;
+
+@Controller
+public class MembersController {
+	
+	@Autowired
+	private MembersService membersService;
+	
+	@GetMapping("members_loginForm")
+	public ModelAndView getMembersLoginForm() {
+		
+		return new ModelAndView("day09/loginForm");
+	}
+	
+	
+	@PostMapping("/members_login_ok")
+	public ModelAndView getMembersLoginOk(MembersVO mvo, HttpSession session) {
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new ModelAndView("day08/error");
+		}
+		
+	}
+
+}

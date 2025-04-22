@@ -1,0 +1,7 @@
+package com.ict.edu08.vo;
+
+public class CartVO {
+
+	
+	private String cart_idx, p_num, p_name, p_price, p_saleprice, p_su, m_id;
+}

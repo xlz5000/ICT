@@ -1,0 +1,13 @@
+package com.ict.edu09.service;
+
+import com.ict.edu09.vo.MembersVO;
+
+public class MembersServiceImpl implements MembersService{
+
+	@Override
+	public MembersVO getMembersLogIn(String m_id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
